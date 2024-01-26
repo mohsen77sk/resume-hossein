@@ -1,3 +1,4 @@
+var plugin = require('tailwindcss/plugin');
 var defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -31,6 +32,10 @@ module.exports = {
       xl: '1440px',
     },
     extend: {
+      colors: {
+        primary: '#00aeff',
+        accent: '#135c73',
+      },
       flex: {
         0: '0 0 auto',
       },
@@ -112,5 +117,16 @@ module.exports = {
       }),
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addComponents }) {
+      addComponents({
+        '.text-secondary': {
+          color: '#a3a3a3',
+        },
+        '.bg-primary-gradient': {
+          background: 'linear-gradient(270deg, #00aeff 0%, #71e4ff 100%)',
+        },
+      });
+    }),
+  ],
 };

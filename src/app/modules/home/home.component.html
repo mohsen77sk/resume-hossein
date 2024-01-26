@@ -1,0 +1,245 @@
+<div class="flex w-full flex-auto flex-col">
+  <section
+    class="my-6 flex items-center justify-center md:mt-32 md:justify-around">
+    <div class="text-center md:text-start">
+      <h1 class="text-2xl font-bold text-accent md:text-7xl">I’m Hossein</h1>
+      <span class="text-secondary">
+        UX/UI Design, Web Design, Drawing Artist
+      </span>
+
+      <p class="text-secondary mt-10 max-w-90 text-justify">
+        I’m a digital designer with a background in consumer psychology and
+        business. I love listening to people’s stories, solving problems, facing
+        new challenges and creating beautiful things that matter.
+      </p>
+
+      <button
+        class="bg-primary-gradient mt-10 rounded-full px-6 py-3 text-white">
+        Download My Resume
+      </button>
+    </div>
+    <img
+      class="hidden w-80 md:block"
+      src="assets/me.png"
+      alt="Hossein Hakimi" />
+  </section>
+
+  <section class="my-6 flex items-center md:mt-32 md:justify-between">
+    <div class="w-full">
+      <span class="text-lg font-medium text-primary">Tools</span>
+      <h2 class="text-5xl text-accent">My Expertise</h2>
+      @for (exp of expertise; track exp.name) {
+        <div
+          class="custom-shadow mt-8 flex w-full flex-col items-center gap-4 rounded-xl bg-white px-6 py-2 md:flex-row md:items-start md:bg-transparent md:shadow-none">
+          <div
+            class="flex h-10 w-10 flex-0 items-center justify-center rounded-full md:bg-gray-300">
+            <img class="w-8 md:w-5" [src]="exp.img" alt="icon" />
+          </div>
+          <div>
+            <span class="hidden text-md font-semibold leading-10 md:block">
+              {{ exp.name }}
+            </span>
+            <p class="text-secondary text-justify md:max-w-90">
+              {{ exp.desc }}
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+    <img
+      class="hidden max-w-160 md:block"
+      src="assets/my-expertise.png"
+      alt="image" />
+  </section>
+
+  <section class="my-6 flex flex-col justify-center md:mt-32 md:items-center">
+    <span class="text-base font-medium text-primary md:text-lg">My Skills</span>
+    <h2 class="text-2xl font-medium text-accent md:text-5xl md:font-normal">
+      Skills and Language
+    </h2>
+    <div class="mt-4 flex flex-wrap justify-center gap-4 md:mt-16 md:gap-24">
+      <div
+        class="custom-shadow w-full space-y-4 rounded-xl bg-white px-6 py-2 md:w-80">
+        <span class="text-lg font-medium text-primary">Tools</span>
+        <div class="grid grid-cols-2 items-center">
+          <span>Photoshop</span>
+          <div class="h-4 w-full rounded-full bg-sky-100 p-1">
+            <div class="h-2 w-10/12 rounded-full bg-primary"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 items-center">
+          <span>Illustrator</span>
+          <div class="h-4 w-full rounded-full bg-sky-100 p-1">
+            <div class="h-2 w-11/12 rounded-full bg-primary"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 items-center">
+          <span>XD</span>
+          <div class="h-4 w-full rounded-full bg-sky-100 p-1">
+            <div class="h-2 w-6/12 rounded-full bg-primary"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 items-center">
+          <span>Figma</span>
+          <div class="h-4 w-full rounded-full bg-sky-100 p-1">
+            <div class="h-2 w-8/12 rounded-full bg-primary"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 items-center">
+          <span>Blender</span>
+          <div class="h-4 w-full rounded-full bg-sky-100 p-1">
+            <div class="h-2 w-5/12 rounded-full bg-primary"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="custom-shadow w-full space-y-4 rounded-xl bg-white px-6 py-2 md:w-80">
+        <span class="text-lg font-medium text-primary">Languages</span>
+        <div class="grid grid-cols-2 items-center">
+          <span>Persian</span>
+          <div class="h-4 w-full rounded-full bg-sky-100 p-1">
+            <div class="h-2 w-10/12 rounded-full bg-primary"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 items-center">
+          <span>English</span>
+          <div class="h-4 w-full rounded-full bg-sky-100 p-1">
+            <div class="h-2 w-11/12 rounded-full bg-primary"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 items-center">
+          <span>French</span>
+          <div class="h-4 w-full rounded-full bg-sky-100 p-1">
+            <div class="h-2 w-6/12 rounded-full bg-primary"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 items-center">
+          <span>German</span>
+          <div class="h-4 w-full rounded-full bg-sky-100 p-1">
+            <div class="h-2 w-8/12 rounded-full bg-primary"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-6 flex flex-col justify-center md:mt-32 md:items-center">
+    <span class="text-base font-medium text-primary md:text-lg">Interests</span>
+    <h2 class="text-2xl font-medium text-accent md:text-5xl md:font-normal">
+      Hobbies
+    </h2>
+    <div class="mt-4 flex flex-wrap justify-center gap-4 md:mt-16 md:gap-30">
+      <div
+        class="custom-shadow w-full rounded-xl bg-white px-6 py-2 text-center md:max-w-120 md:bg-transparent md:shadow-none">
+        <span class="text-2xl font-medium">3D Design</span>
+        <p class="text-secondary mb-6 mt-4 text-center">
+          In the first place, I started to learn Blender to present my works
+          better (like a 3D phone in which every party is popping out of its
+          screen) but after a while, I enjoyed creating some cool inspirational
+          models.
+        </p>
+        <div class="flex items-center justify-between">
+          <img class="w-20" src="assets/blender_one-02.png" alt="blender" />
+          <img class="w-20" src="assets/blender_two-02.png" alt="blender" />
+          <img class="w-20" src="assets/blender_three-02.png" alt="blender" />
+        </div>
+      </div>
+      <div
+        class="custom-shadow w-full rounded-xl bg-white px-6 py-2 text-center md:max-w-120 md:bg-transparent md:shadow-none">
+        <span class="text-2xl font-medium">Reading Books</span>
+        <p class="text-secondary mb-6 mt-4 text-center">
+          I rarely read anything except about business, psychology, or UX. some
+          of my favorite books are:
+        </p>
+        <div class="flex items-center justify-between">
+          <img class="w-16" src="assets/71xdd+P4SML.png" alt="book" />
+          <img class="w-16" src="assets/61nJHlNzeGL.png" alt="book" />
+          <img class="w-16" src="assets/71d2lYHQUxL.png" alt="book" />
+        </div>
+      </div>
+      <div
+        class="custom-shadow w-full rounded-xl bg-white px-6 py-2 text-center md:max-w-120 md:bg-transparent md:shadow-none">
+        <span class="text-2xl font-medium">Programming</span>
+        <p class="text-secondary mb-6 mt-4 text-center">
+          I’m a computer nerd so it’s normal for someone like me to at least try
+          coding once. I learned Python when I was at university and enjoyed
+          every second of it! most scripts I’ve written were in fields of Data
+          Mining, Natural language Processing
+        </p>
+        <div class="flex items-center justify-between">
+          <img
+            class="mix-blend-multiply"
+            src="assets/programing-group.png"
+            alt="chart" />
+        </div>
+      </div>
+      <div
+        class="custom-shadow w-full rounded-xl bg-white px-6 py-2 text-center md:max-w-120 md:bg-transparent md:shadow-none">
+        <span class="text-2xl font-medium">Playing Video Games</span>
+        <p class="text-secondary mb-6 mt-4 text-center">
+          Playing video games I love playing video games, mostly RPG and
+          story-based adventures.
+        </p>
+        <div class="flex items-center justify-between">
+          <img class="w-20" src="assets/epicstore-02.png" alt="book" />
+          <img class="w-20" src="assets/steam-02.png" alt="book" />
+          <img class="w-20" src="assets/minecraft-02.png" alt="book" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-6 flex flex-col justify-center md:mt-32 md:items-center">
+    <span class="text-base font-medium text-primary md:text-lg">Portfolio</span>
+    <h2 class="text-2xl font-medium text-accent md:text-5xl md:font-normal">
+      My Portfolio
+    </h2>
+    <div class="flex flex-col-reverse items-center md:flex-col">
+      <a
+        class="bg-primary-gradient mt-10 rounded-full px-6 py-3 text-white"
+        [routerLink]="['/portfolio']">
+        Preview
+      </a>
+      <div class="mt-4 grid grid-cols-2 gap-2 md:mt-16 md:grid-cols-4 md:gap-8">
+        @for (port of portfolio; track port) {
+          <div
+            class="relative h-50 w-50 overflow-hidden rounded-xl bg-gray-300">
+            <img [src]="port" alt="" />
+            <div
+              class="absolute right-2 top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full bg-white">
+              <img class="h-3 w-3" src="assets/image-icon.svg" alt="icon" />
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="my-6 hidden flex-col items-center justify-center md:mt-32 md:flex">
+    <span class="text-lg font-medium text-primary">My Social Media</span>
+    <h2 class="text-5xl text-accent">Be in touch</h2>
+    <img
+      class="my-4 max-w-90"
+      src="assets/social_media-02.svg"
+      alt="social media" />
+    <div class="flex flex-col gap-4">
+      <div class="flex items-center gap-6">
+        <img class="w-8" src="assets/whatsapp.svg" alt="whatsapp" />
+        <span class="text-2xl">+98 917 40 40 507</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <img class="w-8" src="assets/telegram.svg" alt="telegram" />
+        <span class="text-2xl">&#64;Minson</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <img class="w-8" src="assets/linkedin.svg" alt="linkedin" />
+        <span class="text-2xl">Hossein_Hekmati</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <img class="w-8" src="assets/dribbble.svg" alt="dribbble" />
+        <span class="text-2xl">HosseinHK</span>
+      </div>
+    </div>
+  </section>
+</div>

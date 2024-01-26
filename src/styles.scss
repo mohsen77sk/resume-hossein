@@ -59,7 +59,7 @@
   /* Set the background and foreground colors */
   body {
     color: #000000 !important;
-    background: #ffffff !important;
+    background: #f4f4f5 !important;
   }
 
   /* Print styles */
@@ -72,34 +72,6 @@
     body {
       background: none !important;
     }
-  }
-
-  .bg-default {
-    background: #ffffff;
-  }
-
-  .text-default {
-    color: #000000;
-  }
-
-  .text-secondary {
-    color: #a3a3a3;
-  }
-
-  .bg-primary {
-    background: #00aeff;
-  }
-
-  .text-primary {
-    color: #00aeff;
-  }
-
-  .bg-accent {
-    background: #135c73;
-  }
-
-  .text-accent {
-    color: #135c73;
   }
 }
 
