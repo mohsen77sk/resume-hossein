@@ -12,7 +12,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 })
 export class LayoutComponent {
   navigation: Array<{ name: string; link: string }> = [
-    { name: 'HOME', link: '/' },
+    { name: 'HOME', link: '/home' },
     { name: 'PORTFOLIO', link: '/portfolio' },
     { name: 'CERTIFICATES', link: '/certificates' },
     { name: 'CONTACT ME', link: '/contact' },
