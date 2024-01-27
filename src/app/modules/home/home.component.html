@@ -8,24 +8,42 @@
           <img class="me-4 w-40" src="assets/my-website.png" alt="profile" />
         </div>
         <div class="-mx-2 -mt-6 flex items-center gap-2">
-          <div class="custom-shadow flex w-full gap-3 rounded-xl bg-white p-2">
-            <img class="h-8 w-8" src="assets/dribbble.svg" alt="dribbble" />
+          <div
+            class="custom-shadow flex w-full gap-1 rounded-xl bg-white p-2 sm:gap-3">
+            <img
+              class="h-6 w-6 sm:h-8 sm:w-8"
+              src="assets/dribbble.svg"
+              alt="dribbble" />
             <div class="flex flex-col">
-              <span class="text-xl font-semibold text-accent">Dribbble</span>
+              <span class="text-base font-semibold text-accent sm:text-xl">
+                Dribbble
+              </span>
               <span class="text-secondary text-sm">Follow me</span>
             </div>
           </div>
-          <div class="custom-shadow flex w-full gap-3 rounded-xl bg-white p-2">
-            <img class="h-8 w-8" src="assets/linkedin.svg" alt="linkedin" />
+          <div
+            class="custom-shadow flex w-full gap-1 rounded-xl bg-white p-2 sm:gap-3">
+            <img
+              class="h-6 w-6 sm:h-8 sm:w-8"
+              src="assets/linkedin.svg"
+              alt="linkedin" />
             <div class="flex flex-col">
-              <span class="text-xl font-semibold text-accent">Linkedin</span>
+              <span class="text-base font-semibold text-accent sm:text-xl">
+                Linkedin
+              </span>
               <span class="text-secondary text-sm">See my work</span>
             </div>
           </div>
-          <div class="custom-shadow flex w-full gap-3 rounded-xl bg-white p-2">
-            <img class="h-8 w-8" src="assets/whatsapp.svg" alt="whatsapp" />
+          <div
+            class="custom-shadow flex w-full gap-1 rounded-xl bg-white p-2 sm:gap-3">
+            <img
+              class="h-6 w-6 sm:h-8 sm:w-8"
+              src="assets/whatsapp.svg"
+              alt="whatsapp" />
             <div class="flex flex-col">
-              <span class="text-xl font-semibold text-accent">Whatsapp</span>
+              <span class="text-base font-semibold text-accent sm:text-xl">
+                Whatsapp
+              </span>
               <span class="text-secondary text-sm">Contact</span>
             </div>
           </div>
@@ -236,7 +254,7 @@
       <div class="mt-4 grid grid-cols-2 gap-2 md:mt-16 md:grid-cols-4 md:gap-8">
         @for (port of portfolio; track port) {
           <div
-            class="relative h-50 w-50 overflow-hidden rounded-xl bg-gray-300">
+            class="relative h-40 w-40 overflow-hidden rounded-xl bg-gray-300 sm:h-50 sm:w-50">
             <img [src]="port" alt="" />
             <div
               class="absolute right-2 top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full bg-white">

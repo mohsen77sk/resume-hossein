@@ -5,7 +5,7 @@
     class="relative z-10 flex h-20 w-full flex-0 items-center justify-center bg-white px-4 shadow md:px-6 print:hidden">
     <div class="flex w-320 max-w-320 items-center justify-between">
       <!-- Navigation -->
-      <div class="flex items-center gap-16">
+      <div class="hidden items-center gap-16 md:flex">
         @for (nav of navigation; track nav.name) {
           <a
             class="leading-8"
@@ -15,6 +15,13 @@
           </a>
         }
       </div>
+      <!-- Menu -->
+      <button
+        type="button"
+        class="flex items-center gap-16 md:hidden"
+        aria-label="menu">
+        <img src="assets/menu.svg" alt="" />
+      </button>
       <!-- Logo -->
       <img class="w-28" src="assets/logo.svg" alt="Logo image" />
     </div>
