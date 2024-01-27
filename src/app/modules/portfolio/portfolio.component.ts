@@ -9,4 +9,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrl: './portfolio.component.scss',
   encapsulation: ViewEncapsulation.None,
 })
-export class PortfolioComponent {}
+export class PortfolioComponent {
+  portfolio: Array<string> = [
+    'assets/Hossein_Hekmati_CV-01.png',
+    '',
+    '',
+    '',
+    '',
+    '',
+  ];
+}
