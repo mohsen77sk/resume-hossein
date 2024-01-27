@@ -1,6 +1,37 @@
 <div class="flex w-full flex-auto flex-col">
   <section
-    class="my-6 flex items-center justify-center md:mt-32 md:justify-around">
+    class="my-6 flex flex-col items-center justify-center md:mt-32 md:flex-row md:justify-around">
+    <div class="mb-20 mt-6 flex w-full md:hidden">
+      <div class="relative flex h-40 w-full flex-col rounded-3xl bg-[#D7F9FF]">
+        <div class="flex justify-between">
+          <img class="m-5 h-20 w-20" src="assets/hh.svg" alt="profile" />
+          <img class="me-4 w-40" src="assets/my-website.png" alt="profile" />
+        </div>
+        <div class="-mx-2 -mt-6 flex items-center gap-2">
+          <div class="custom-shadow flex w-full gap-3 rounded-xl bg-white p-2">
+            <img class="h-8 w-8" src="assets/dribbble.svg" alt="dribbble" />
+            <div class="flex flex-col">
+              <span class="text-xl font-semibold text-accent">Dribbble</span>
+              <span class="text-secondary text-sm">Follow me</span>
+            </div>
+          </div>
+          <div class="custom-shadow flex w-full gap-3 rounded-xl bg-white p-2">
+            <img class="h-8 w-8" src="assets/linkedin.svg" alt="linkedin" />
+            <div class="flex flex-col">
+              <span class="text-xl font-semibold text-accent">Linkedin</span>
+              <span class="text-secondary text-sm">See my work</span>
+            </div>
+          </div>
+          <div class="custom-shadow flex w-full gap-3 rounded-xl bg-white p-2">
+            <img class="h-8 w-8" src="assets/whatsapp.svg" alt="whatsapp" />
+            <div class="flex flex-col">
+              <span class="text-xl font-semibold text-accent">Whatsapp</span>
+              <span class="text-secondary text-sm">Contact</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="text-center md:text-start">
       <h1 class="text-2xl font-bold text-accent md:text-7xl">I’m Hossein</h1>
       <span class="text-secondary">
@@ -26,11 +57,13 @@
 
   <section class="my-6 flex items-center md:mt-32 md:justify-between">
     <div class="w-full">
-      <span class="text-lg font-medium text-primary">Tools</span>
-      <h2 class="text-5xl text-accent">My Expertise</h2>
+      <span class="text-base font-medium text-primary md:text-lg">Tools</span>
+      <h2 class="text-2xl font-medium text-accent md:text-5xl md:font-normal">
+        My Expertise
+      </h2>
       @for (exp of expertise; track exp.name) {
         <div
-          class="custom-shadow mt-8 flex w-full flex-col items-center gap-4 rounded-xl bg-white px-6 py-2 md:flex-row md:items-start md:bg-transparent md:shadow-none">
+          class="custom-shadow mt-4 flex w-full flex-col items-center gap-4 rounded-xl bg-white px-6 py-2 md:mt-8 md:flex-row md:items-start md:bg-transparent md:shadow-none">
           <div
             class="flex h-10 w-10 flex-0 items-center justify-center rounded-full md:bg-gray-300">
             <img class="w-8 md:w-5" [src]="exp.img" alt="icon" />
@@ -47,7 +80,7 @@
       }
     </div>
     <img
-      class="hidden max-w-160 md:block"
+      class="hidden md:block md:max-w-120 lg:max-w-160"
       src="assets/my-expertise.png"
       alt="image" />
   </section>
