@@ -17,4 +17,12 @@ export class LayoutComponent {
     { name: 'CERTIFICATES', link: '/certificates' },
     { name: 'CONTACT ME', link: '/contact' },
   ];
+
+  toggleNavigation(): void {
+    const navigation = document.getElementById('drawer-navigation');
+    const backdrop = document.getElementById('drawer-backdrop');
+    navigation?.classList.toggle('transition-transform');
+    navigation?.classList.toggle('transform-none');
+    backdrop?.classList.toggle('hidden');
+  }
 }
