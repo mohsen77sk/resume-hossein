@@ -15,22 +15,22 @@ export class HomeComponent {
     {
       img: 'assets/illustrator.svg',
       name: 'Adobe Illustrator',
-      desc: 'I have 5 years of experience working with Adobe Illustrator, I use this app in almost all of my projects, it’s really handy.',
+      desc: 'I have accumulated five years of extensive experience working with Adobe Illustrator, utilizing this indispensable application in nearly all of my projects. Its remarkable functionality and practicality have proven to be invaluable to me.',
     },
     {
       img: 'assets/photoshop.svg',
       name: 'Adobe Photoshop',
-      desc: 'I have 7 years of experience working with Adobe Photoshop, It was my primary app when I was a graphic designer and now, it’s more like a tool for me to edit and polish textures and resources for my projects. ',
+      desc: '"I possess a wealth of eight years\' experience working with Adobe Photoshop, which served as my primary application during my tenure as a graphic designer. Currently, it has transformed into an invaluable tool for me to refine and enhance textures and resources for my projects.',
     },
     {
       img: 'assets/xd.svg',
       name: 'Adobe Xd',
-      desc: 'I have 3 years of experience working with Adobe XD, I was overwhelmed with joy when I figured out that there’s such an app like this, I’ve used this app for UI projects officially.',
+      desc: 'I have garnered four years of valuable experience working with Adobe XD, a discovery that filled me with overwhelming joy. This exceptional application has become my go-to tool for official UI projects.',
     },
     {
       img: 'assets/figma.svg',
       name: 'Figma',
-      desc: 'I have 2 years of experience working with Figma. I came to this app when I saw some flaws in Xd, it has a far better interface plus some cool features and more of that, The head of design or the employer can oversee the project so easily.',
+      desc: 'I have accumulated four years of hands-on experience working with Figma, which became my preferred choice after identifying certain limitations in XD. With its superior interface and an array of impressive features, Figma has proven to be a remarkable tool. Notably, it enables seamless project oversight for design leads and employers alike, enhancing collaboration and efficiency.',
     },
   ];
 

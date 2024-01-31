@@ -33,8 +33,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#00aeff',
-        accent: '#135c73',
+        primary: '#AB06D4',
+        accent: '#3D1373',
       },
       flex: {
         0: '0 0 auto',
@@ -124,7 +124,7 @@ module.exports = {
           color: '#a3a3a3',
         },
         '.bg-primary-gradient': {
-          background: 'linear-gradient(270deg, #00aeff 0%, #71e4ff 100%)',
+          background: 'linear-gradient(90deg, #490F8A 0%, #AB06D4 100%)',
         },
       });
     }),
